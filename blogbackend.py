@@ -7,7 +7,7 @@ def generate_essay():
 
     working_path = os.getcwd()
     md_path = os.path.join(working_path, 'md')
-    html_path = os.path.join(working_path, 'html')
+    html_path = os.path.join(working_path, 'static')
     md_list = os.listdir(md_path)
 
     for md_name in md_list:
