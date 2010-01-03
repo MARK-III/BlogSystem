@@ -7,8 +7,8 @@ import os
 
 def generate_index():
 
-    public_ip = '192.168.0.93'
-    public_url = 'http://' + public_ip + '/'
+    public_host = 'xjq314.com'
+    public_url = 'http://' + public_host + '/'
 
     working_path = os.getcwd()
     html_path = os.path.join(working_path, 'static')
