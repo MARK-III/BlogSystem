@@ -18,10 +18,6 @@ def index():
 def blog(name):
     return redirect(url_for('static', filename=name))
 
-@app.route('/test')
-def test():
-    return 'fuck me'
-
 if __name__ == '__main__':
     app.debug = True
     app.run(host='192.168.0.93',port=80)
