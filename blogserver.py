@@ -1,3 +1,7 @@
+#coding:utf-8
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 from flask import Flask
 from flask import request
 from flask import send_from_directory
