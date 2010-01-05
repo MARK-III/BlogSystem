@@ -13,6 +13,7 @@ def generate_index():
     working_path = os.getcwd()
     html_path = os.path.join(working_path, 'static')
     html_list = os.listdir(html_path)
+    html_list.sort(reverse = True)
 
     index_name = 'index.html'
     index_path = os.path.join(html_path, index_name)
