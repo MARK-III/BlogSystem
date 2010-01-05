@@ -1,1 +1,1 @@
-* * * * * cd /home/linaro/BlogSystem; export GIT_SSL_NO_VERIFY=1; git pull
+* * * * * cd /home/linaro/BlogSystem; export GIT_SSL_NO_VERIFY=1; git pull; python main.py
