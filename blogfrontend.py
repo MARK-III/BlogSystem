@@ -24,8 +24,8 @@ def generate_index():
     for html_name in html_list:
         if (html_name != 'index.html'):
             flag = len(html_name)-5
-	    html_path = os.path.join(html_path, html_name)
-	    html_file = open(html_path)
+	    html = os.path.join(html_path, html_name)
+	    html_file = open(html)
 	    essay_name = html_file.readline().replace('#','')
             #essay_name = html_name[11:flag].replace('_',' ')
             index.write('<a href="' + public_url + 'blog/' + html_name + '">' + essay_name + '</a>\n')
