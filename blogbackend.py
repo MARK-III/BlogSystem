@@ -13,6 +13,11 @@ def generate_essay():
     md_path = os.path.join(working_path, 'md')
     html_path = os.path.join(working_path, 'static')
     md_list = os.listdir(md_path)
+    html_list = os.listdir(html_path)
+
+    for html_name in html_list:
+        html = os.path.join(html_path, html_name)
+        os.remove(html)
 
     for md_name in md_list:
 
