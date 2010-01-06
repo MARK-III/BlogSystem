@@ -18,8 +18,9 @@ def generate_essay():
     #Check if static folder exists, if not create it
 
     for html_name in html_list:
-        html = os.path.join(html_path, html_name)
-        os.remove(html)
+	if (html_name.find('html') > 0):
+            html = os.path.join(html_path, html_name)
+            os.remove(html)
 
     for md_name in md_list:
 
