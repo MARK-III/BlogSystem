@@ -23,7 +23,7 @@ def generate_index():
     index.write('<h1>' + blog_name + '</h1>\n')
 
     for html_name in html_list:
-        if (html_name != 'index.html'):
+        if ((html_name != 'index.html') & (html_name.find('html') > 0))
 	    html = os.path.join(html_path, html_name)
 	    html_file = open(html)
 	    essay_name = html_file.readline().replace('<h1>','').replace('</h1>','')
