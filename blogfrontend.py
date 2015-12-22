@@ -18,7 +18,7 @@ def generate_index():
     index_path = os.path.join(html_path, index_name)
     index = codecs.open(index_path, mode='w', encoding='utf-8')
 
-    blog_name = "XJQ's Blog"
+    blog_name = "坐井观天"
     index.write('<h1>' + blog_name + '</h1>\n')
 
     for html_name in html_list:
