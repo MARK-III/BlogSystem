@@ -18,16 +18,16 @@ All the articles will be written in markdown format and stored in a folder of th
 `crontab`  
 Repeated to check if there is any new article. If there is, it will git pull it from github.
 
-`blogbackend`  
+`blogbackend.py`  
 A python script to convert *.md to *.html. Now I use an existing libery. Later I will write my own, or extand for the current one.
 
-`blogfrontend`  
+`blogfrontend.py`  
 A python script to create the index page of the blog. Later I will add CSS and maybe js for some function.
 
-`blogserver`  
+`blogserver.py`  
 Powered by Flask and serves static files.
 
-`Something-daemon`  
+`Something-daemon.py`  
 A daemon call all the script above.
 
 ------------------------------------------------------------------
