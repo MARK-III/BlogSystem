@@ -27,7 +27,7 @@ A python script to create the index page of the blog. Later I will add CSS and m
 `blogserver.py`  
 Powered by Flask and serves static files.
 
-`Something-daemon.py`  
+`Something-daemon`  
 A daemon call all the script above.
 
 ------------------------------------------------------------------
