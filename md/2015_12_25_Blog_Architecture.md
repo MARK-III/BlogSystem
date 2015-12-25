@@ -34,5 +34,8 @@ A daemon call all the script above.
 
 Check xjq314.com
 
+Update on 2015.12.26:  
+Now CSS is supported.
+
 
 
