@@ -18,10 +18,17 @@ def generate_index():
     index_name = 'index.html'
     index_path = os.path.join(html_path, index_name)
     index = codecs.open(index_path, mode='w', encoding='utf-8')
-
+    
+    #Write css
+    index.write('<head>\n')
+    index.write('<link rel="stylesheet" type="text/css" href="http://xjq314.com/test.css" />\n')
+    index.write('<head>\n')
+    
+    #Write head
     blog_name = "坐井观天"
     index.write('<h1>' + blog_name + '</h1>\n')
-
+    
+    #Write article list
     for html_name in html_list:
         if ((html_name != 'index.html') & (html_name.find('html') > 0))
 	    html = os.path.join(html_path, html_name)
