@@ -6,7 +6,8 @@ import codecs
 import os
 
 def generate_index():
-
+	
+    blog_name = "坐井观天"
     public_host = 'xjq314.com'
     public_url = 'http://' + public_host + '/'
 
@@ -25,7 +26,6 @@ def generate_index():
     index.write('</head>\n')
     
     #Write head
-    blog_name = "坐井观天"
     index.write('<h1>' + blog_name + '</h1>\n')
     
     #Write article list
