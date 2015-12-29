@@ -10,7 +10,7 @@ Here are the targets of this project:
 
 ------------------------------------------------------
 
-######Software Architecture  
+##Software Architecture  
 
 `/md`  
 All the articles will be written in markdown format and stored in this folder.
@@ -35,7 +35,7 @@ Call nohup to run flask http server, log will be write to nohup.out
 
 ------------------------------------------------------------
 
-######OS
+##OS
 
 Some version of [linaro](http://dl.cubieboard.org/model/cubietruck/Image/Linaro-server/) compiled for arm is used. Later I will compile my own system.  
 Version:  
@@ -46,7 +46,7 @@ Version:
 
 -----------------------------------------------------------
 
-######Hardware
+##Hardware
 
 I choose [**Cubie Truck**](cubieboard.org) to host my server.
 
