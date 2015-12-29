@@ -2,40 +2,58 @@
 
 Nowadays it is quite simple to have your own blog. Thousands free blog providers are out there. With some clicks and without even basic knowledge of computer science, you are a blogger. But being as myself, I am not satisfied with any blog provider on this earth.(Yes such a big asshole I am.) So, I would like to make my own blog from sketch.
 
-------------------------------------------------------
-
-Here are some background of this project:  
+Here are the targets of this project:  
 
 * I would like to build tech stacks as much as possible.(I won't write an OS for it, of cource.)
 * I would like to make my code short and simple.
 * I don't want to spend much money on it.
 
-Anyway, the final tech stack is like this:  
+------------------------------------------------------
 
-`md`  
-All the articles will be written in markdown format and stored in a folder of this very repository.
+######Software Architecture  
 
-`crontab`  
-Repeated to check if there is any new article. If there is, it will git pull it from github.
+`/md`  
+All the articles will be written in markdown format and stored in this folder.
+
+`/html`
+The generated html file and css file will be sroted in this folder.
+
+`crontab -l`  
+A cron task will repeatly pull from github and call main to convert md to html and generate an index page.
 
 `blogbackend.py`  
-A python script to convert *.md to *.html. Now I use an existing libery. Later I will write my own, or extand for the current one.
+A python library to convert *.md to *.html. Now an existing libary is being used. Later I will write my own, or extand for the current one.
 
 `blogfrontend.py`  
-A python script to create the index page of the blog. Later I will add CSS and maybe js for some function.
+A python library to create the index page of the blog. Later I will add CSS and maybe js for some function.
 
 `blogserver.py`  
-Powered by Flask and serves static files.
+Will call flask to run an http server.
 
-`Something-daemon`  
-A daemon call all the script above.
+`restart_server.sh`  
+Call nohup to run flask http server, log will be write to nohup.out  
 
-------------------------------------------------------------------
+------------------------------------------------------------
 
-Check xjq314.com
+######OS
 
-Update on 2015.12.26:  
-Now CSS is supported.
+Some version of linaro compiled for arm is used. Later I will compile my own system.  
+Version:  
+* Linux kernel: `3.4.79`
+* Python: `2.7.3`
+* Sqlite3: `3.7.13`
+* Flask: `0.10.1`
+
+-----------------------------------------------------------
+
+######Hardware
+
+I choose [**Cubie Truck**](cubieboard.org) to host my server.
+
+-----------------------------------------------------------
+
+Check [here](xjq314.com) if you are interested.
+
 
 
 
