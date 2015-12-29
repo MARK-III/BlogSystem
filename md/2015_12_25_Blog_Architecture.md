@@ -1,6 +1,6 @@
 #Homemade Tiny Blog
 
-Nowadays it is quite simple to have your own blog. Thousands free blog providers are out there. With some clicks and without even basic knowledge of computer science, you are a blogger. But being as myself, I am not satisfied with any blog provider on this earth.(Yes such a big asshole I am.) So, I would like to make my own blog from sketch.
+Nowadays it is quite simple to have your own blog. Thousands free blog providers are out there. With some clicks and without even basic knowledge of computer science, you are a blogger. But being as myself, I am not satisfied with any blog provider on this earth.(Yes such a big asshole I am.) So, I would like to build my own blog from sketch.
 
 Here are the targets of this project:  
 
@@ -48,7 +48,8 @@ Version:
 
 ##Hardware
 
-I choose [**Cubie Truck**](cubieboard.org) to host my server.
+I choose [**Cubie Board**](cubieboard.org) to host my server.  
+An option is [**Raspberry Pi**](https://www.raspberrypi.org/).  
 
 -----------------------------------------------------------
 
