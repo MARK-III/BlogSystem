@@ -30,7 +30,7 @@ def generate_index():
     
     #Write article list
     for html_name in html_list:
-        if ((html_name != 'index.html') & (html_name.find('html') > 0))
+        if ((html_name != 'index.html') & (html_name.find('html') > 0)):
 	    html = os.path.join(html_path, html_name)
 	    html_file = open(html)
 	    essay_name = html_file.readline().replace('<h1>','').replace('</h1>','')

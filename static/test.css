@@ -2,14 +2,18 @@ h1,h2,h3,h4,h5,h6{
     text-align: center;
     color: black;
     background: white;
-    font-size:14px;
+    font-size:24px;
     }
 body{
     text-align: center;
     color: black;
     background: white;
-    font-size:10px;
+    font-size:18px;
     }
+a {
+    display: block;
+    cursor: pointer;
+  }
 #red {color: red;}
 #green {color: green;}
     
