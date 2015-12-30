@@ -33,7 +33,7 @@ def generate_index():
         if ((html_name != 'index.html') & (html_name.find('html') > 0)):
 	    html = os.path.join(html_path, html_name)
 	    html_file = open(html)
-	    essay_name = html_file.readline().replace('<h1>','').replace('</h1>','')
+	    essay_name = html_file.readline().replace('<h1>','').replace('</h1>\n','')
             index.write('<a href="' + public_url + 'blog/' + html_name + '">' + essay_name + '</a>\n')
             index.write('<br></br>\n')
     index.close()
