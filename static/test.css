@@ -10,10 +10,22 @@ body{
     background: white;
     font-size:20px;
     }
-a {
-    display: block;
-    cursor: pointer;
+a:link {
+    text-decoration: none;
+    color: black;
   }
+a:active {
+    text-decoration: blink;
+  }
+a:hover {
+    text-decoration: underline;
+    color: blue;
+  }
+a:visited {
+    text-decoration: none;
+    color: black;
+  }
+
 #red {color: red;}
 #green {color: green;}
     
