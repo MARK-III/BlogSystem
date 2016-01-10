@@ -41,7 +41,7 @@ def generate_index():
             html_file.close()
             
             contents.insert(0, '</head>\n')
-           #contents.insert(0, '<link rel="stylesheet" type="text/css" href="http://xjq314.com/test.css" />\n')
+            contents.insert(0, '<link rel="stylesheet" type="text/css" href="http://xjq314.com/wangyin.css" />\n')
 	    contents.insert(0, '<title>' + essay_name + '</title>\n')
             contents.insert(0, '<head>\n')
             html_file = open(html, "w")
