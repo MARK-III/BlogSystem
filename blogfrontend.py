@@ -34,19 +34,20 @@ def generate_index():
         if ((html_name != 'index.html') & (html_name.find('html') > 0)):
 	    html = os.path.join(html_path, html_name)
 	    
-            #Add css to article
+            #Add head to article
             html_file = open(html, "r")
             contents = html_file.readlines()
 	    essay_name = contents[0].replace('<h1>','').replace('</h1>\n','')
             html_file.close()
             
-           # contents.insert(0, '</head>\n')
-           # contents.insert(0, '<link rel="stylesheet" type="text/css" href="http://xjq314.com/test.css" />\n')
-           # contents.insert(0, '<head>\n')
-           # html_file = open(html, "w")
-           # contents = "".join(contents)
-           # html_file.write(contents)
-           # html_file.close 
+            contents.insert(0, '</head>\n')
+           #contents.insert(0, '<link rel="stylesheet" type="text/css" href="http://xjq314.com/test.css" />\n')
+	    contents.insert(0, '<title>' + essay_name + '</title>\n')
+            contents.insert(0, '<head>\n')
+            html_file = open(html, "w")
+            contents = "".join(contents)
+            html_file.write(contents)
+            html_file.close 
 
             index.write('<a href="' + public_url + html_name + '">' + essay_name + '</a>\n')
             index.write('<br></br>\n')
