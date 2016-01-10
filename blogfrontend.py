@@ -23,6 +23,7 @@ def generate_index():
     #Write css
     index.write('<head>\n')
     index.write('<link rel="stylesheet" type="text/css" href="http://xjq314.com/test.css" />\n')
+    index.write('<link rel="shortcut icon" href="http://xjq314.com/ironman.ico">\n')
     index.write('</head>\n')
     
     #Write head
