@@ -14,9 +14,9 @@ app = Flask(__name__, static_url_path='')
 def index():
     return redirect(url_for('static', filename='index.html'))
 
-@app.route('/blog/<name>')
-def blog(name):
-    return redirect(url_for('static', filename=name))
+#@app.route('/blog/<name>')
+#def blog(name):
+#    return redirect(url_for('static', filename=name))
 
 if __name__ == '__main__':
     app.debug = True

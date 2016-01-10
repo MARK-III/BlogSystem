@@ -48,6 +48,6 @@ def generate_index():
            # html_file.write(contents)
            # html_file.close 
 
-            index.write('<a href="' + public_url + 'blog/' + html_name + '">' + essay_name + '</a>\n')
+            index.write('<a href="' + public_url + html_name + '">' + essay_name + '</a>\n')
             index.write('<br></br>\n')
     index.close()
