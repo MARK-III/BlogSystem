@@ -1,11 +1,11 @@
 #Homemade Tiny Blog
 
-Nowadays it is quite simple to have your own blog. Thousands free blog providers are out there. With some clicks and without even basic knowledge of computer science, you are a blogger. But being as myself, I am not satisfied with any blog provider on this earth.(Yes such a big asshole I am.) So, I would like to build my own blog from sketch.
+Nowadays it is quite easy to have your own blog. Thousands free blog providers are out there. With some clicks and without even basic knowledge of computer science, you are a blogger. But being as myself, I am not satisfied with any blog provider on this earth.(Yes such a big asshole I am.) So, I would like to build my own blog from sketch.
 
 Here are the targets of this project:  
 
 * I would like to build tech stacks as much as possible.(I won't write an OS for it, of cource.)
-* I would like to make my code short and simple.
+* I would like to keep my code short and simple.
 * I don't want to spend much money on it.
 
 ------------------------------------------------------
@@ -16,7 +16,7 @@ Here are the targets of this project:
 All the articles will be written in markdown format and stored in this folder.
 
 `/html`
-The generated html file and css file will be sroted in this folder.
+The generated html file and css file will be stored in this folder.
 
 `crontab -l`  
 A cron task will repeatly pull from github and call main to convert md to html and generate an index page.
