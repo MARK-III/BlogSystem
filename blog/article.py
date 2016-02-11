@@ -2,9 +2,9 @@
 import markdown
 import codecs
 import os
-# import sys
-# reload(sys)
-# sys.setdefaultencoding("utf-8")
+import sys
+reload(sys)
+sys.setdefaultencoding("utf-8")
 from blog import config
 
 
