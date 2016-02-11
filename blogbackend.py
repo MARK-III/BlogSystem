@@ -17,6 +17,7 @@ def generate_essay():
 
     #Check if static folder exists, if not create it
 
+    #First delete all the html file
     for html_name in html_list:
 	if (html_name.find('html') > 0):
             html = os.path.join(html_path, html_name)
