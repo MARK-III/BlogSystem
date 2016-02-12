@@ -53,7 +53,7 @@ An option is [**Raspberry Pi**](https://www.raspberrypi.org/).
 
 -----------------------------------------------------------
 
-Check [here](http://xjq314.com/) if you are interested.
+Check [here](https://github.com/MARK-III/BlogSystem) if you are interested.
 
 
 
