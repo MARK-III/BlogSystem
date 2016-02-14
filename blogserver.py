@@ -12,6 +12,10 @@ app = Flask(__name__, static_url_path='')
 
 @app.route('/')
 def index():
+    return redirect(url_for('blog'))
+
+@app.route('/blog')
+def blog():
     return redirect(url_for('static', filename='index.html'))
 
 if __name__ == '__main__':

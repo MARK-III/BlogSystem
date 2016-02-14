@@ -26,12 +26,14 @@ class Index:
         index_output.write('<head>\n')
         index_output.write('<link rel="stylesheet" type="text/css" href=' + conf.public_url + conf.css_index + '/>\n')
         index_output.write('<link rel="shortcut icon" href=' + conf.public_url + conf.icon + '>\n')
-        index_output.write('</head>\n')
+        index_output.write('<title>' + conf.blog_name + '</title>\n')
+	index_output.write('</head>\n')
         # Write h1
         index_output.write('<h1>' + conf.blog_name + '</h1>\n')
         # Write article list
         for html_name in html_list:
             if (html_name != 'index.html') & (html_name.find('html') > 0):
+	  #  if re.match(r'[0-9][0-9][0-9][0-9]_[0-9][0-9]_[0-9][0-9].*', name) is not None:
                 html_file = open(os.path.join(html_path, html_name), mode='r')
                 html_contents = html_file.readlines()
                 essay_name = html_contents[5].replace('<h1>','').replace('</h1>\n','')
