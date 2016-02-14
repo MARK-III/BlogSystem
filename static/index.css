@@ -8,6 +8,7 @@ h2,h3,h4,h5,h6{
     font-size:40px;
     }
 body{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, Helvetica, STKaiti, SimSun, serif;
     font-size: 18px;
     text-align: center;
     background: white;
@@ -42,7 +43,7 @@ li a {
      display: inline-block;
      color: white;
      text-align: center;
-     padding: 14px 16px;
+     padding: 8px 16px;
      text-decoration: none;
 }
 li a:hover{
