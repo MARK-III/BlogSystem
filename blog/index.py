@@ -35,10 +35,6 @@ class Index:
         for html_name in html_list:
             if (html_name != 'index.html') & (html_name.find('html') > 0):
 	    #  if re.match(r'[0-9][0-9][0-9][0-9]_[0-9][0-9]_[0-9][0-9].*', name) is not None:
-                # html_file = open(os.path.join(html_path, html_name), mode='r')
-                # html_contents = html_file.readlines()
-                # essay_name = html_contents[5].replace('<h1>','').replace('</h1>\n','')
-                # html_file.close()
 		myarticle = article.Article(html_name.replace('html','md'))
 		essay_name = myarticle.essay_name
                 index_output.write('<a href="' + conf.public_url + html_name + '">' + essay_name + '</a>\n')
