@@ -30,13 +30,13 @@ class Index:
         index_output.write('<title>' + conf.blog_name + '</title>\n')
 	index_output.write('</head>\n')
 	# Write navi
-	index_output.write('<ul>')
-  	index_output.write('<li><a href=' + conf.public_url + '>' + conf.blog_name  + '</a></li>')
-	index_output.write('<ul style="float:right;list-style-tpye:none;">')
-    	index_output.write('<li><a href="https://github.com/xjq">Projects</a></li>')
-    	index_output.write('<li><a href="2015_12_25_blog_architecture.html">About</a></li>')
- 	index_output.write('</ul>')
-	index_output.write('</ul>')
+	index_output.write('<ul>\n')
+  	index_output.write('<li><a href=' + conf.public_url + '>' + conf.blog_name  + '</a></li>\n')
+	index_output.write('<ul style="float:right;list-style-tpye:none;">\n')
+    	index_output.write('<li><a href="https://github.com/xjq">Projects</a></li>\n')
+    	index_output.write('<li><a href="2015_12_25_blog_architecture.html">About</a></li>\n')
+ 	index_output.write('</ul>\n')
+	index_output.write('</ul>\n')
         # Write h1
         #index_output.write('<h1>' + conf.blog_name + '</h1>\n')
         # Write article list
