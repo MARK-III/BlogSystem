@@ -1,9 +1,13 @@
 #  Tao of Computer Science
 
-
 original: maths micro circuit  
 basic: algorithm datastructure  
-middle: os(system call,tpc/ip) language(complier, functional programming)  
-high: design pattern system design   
+mi: language(complier, functional programming)  
+mi2: design pattern
+middle: os(system call,tpc/ip)  
+high1: system design   
+high2: gui
 
-tasks  
+tasks1: algorithm in C leetcode
+
+
