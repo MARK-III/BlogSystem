@@ -14,14 +14,15 @@ class Index:
     def __init__(self):
 
         self.working_path = os.getcwd()
+	self.server_static_path = '/home/linaro/FlaskServer'
 
     def to_html(self):
 
         conf = config.Config()
-        html_path = os.path.join(self.working_path, 'static')
+        html_path = os.path.join(self.server_static_path, 'static')
         html_list = os.listdir(html_path)
         html_list.sort(reverse=True)
-        index_file = os.path.join(self.working_path, 'static', 'index.html')
+        index_file = os.path.join(self.server_static_path, 'static', 'index.html')
         index_output = codecs.open(index_file, mode='w', encoding='utf-8')
         # Write head
         index_output.write('<head>\n')
