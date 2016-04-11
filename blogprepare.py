@@ -3,10 +3,9 @@ import re
 from blog import article
 from blog import index
 
-server_static_path = '/home/linaro/FlaskServer'
 working_path = os.getcwd()
 # Delete all the html files
-html_path = os.path.join(server_static_path, 'static')
+html_path = os.path.join(working_path, 'html')
 html_list = os.listdir(html_path)
 for name in html_list:
     if name.find('html') > 0:
