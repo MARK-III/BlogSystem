@@ -8,12 +8,14 @@ from flask import send_from_directory
 from flask import url_for
 from flask import redirect
 
+
 class BlogServer:
 
     def __init__(self):
         pass
-
-    def decorate(self,app):
+    
+    @staticmethod
+    def decorate(app):
         
         @app.route('/blog')
         def blog_index():
