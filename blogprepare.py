@@ -3,7 +3,7 @@ import re
 from blog import article
 from blog import index
 
-working_path = os.getcwd()
+working_path = os.path.join(os.getcwd(), 'Blog')
 # Delete all the html files
 html_path = os.path.join(working_path, 'html')
 html_list = os.listdir(html_path)

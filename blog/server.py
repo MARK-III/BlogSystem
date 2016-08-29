@@ -17,14 +17,14 @@ class BlogServer:
         
         @app.route('/blog')
         def blog_index():
-            return send_from_directory('/home/linaro/BlogSystem/html', 'index.html')
+            return send_from_directory('/home/linaro/BlogSystem/Blog/html', 'index.html')
 
         @app.route('/blog/<filename>')
         def blog_article(filename):
-            return send_from_directory('/home/linaro/BlogSystem/html', filename)
+            return send_from_directory('/home/linaro/BlogSystem/Blog/html', filename)
 
         @app.route('/pic/<filename>')
         def pic(filename):
-            return send_from_directory('/home/linaro/BlogSystem/pic', filename)
+            return send_from_directory('/home/linaro/BlogSystem/Blog/pic', filename)
 
         return app
