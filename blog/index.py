@@ -25,8 +25,8 @@ class Index:
         
         # Write head
         index_output.write('<head>\n')
-        index_output.write('<link rel="stylesheet" type="text/css" href=' + Config().css_index + '/>\n')
-        index_output.write('<link rel="shortcut icon" href=' + Config().icon + '>\n')
+        index_output.write('<link rel="stylesheet" type="text/css" href=/css/' + Config().css_index + '>\n')
+        index_output.write('<link rel="shortcut icon" href=/css/' + Config().icon + '>\n')
         index_output.write('<title>' + Config().blog_name + '</title>\n')
 	index_output.write('</head>\n')
 	
@@ -34,7 +34,7 @@ class Index:
 	index_output.write('<ul>\n')
   	index_output.write('<li><a href=' + Config().public_url + '>' + Config().blog_name  + '</a></li>\n')
 	index_output.write('<ul style="float:right;list-style-tpye:none;">\n')
-    	index_output.write('<li><a href="library">Library</a></li>\n')
+    	#index_output.write('<li><a href="library">Library</a></li>\n')
 	index_output.write('<li><a href="https://github.com/xjq">Projects</a></li>\n')
     	index_output.write('<li><a href="blog/2015_12_25_blog_architecture.html">About</a></li>\n')
  	index_output.write('</ul>\n')

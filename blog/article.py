@@ -29,8 +29,8 @@ class Article:
         # Add head to article
 	head = [
                 '<head>\n',
-                '<link rel="stylesheet" type="text/css" href=' + Config().public_url + Config().css_article + '/>\n',
-                '<link rel="shortcut icon" href=' + Config().public_url + Config().icon + '>\n',
+                '<link rel="stylesheet" type="text/css" href=/css/' + Config().css_article + '>\n',
+                '<link rel="shortcut icon" href=/css/' + Config().icon + '>\n',
                 '<title>' + self.essay_name + '</title>\n',
                 '</head>\n'
         ]
