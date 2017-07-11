@@ -13,7 +13,7 @@ class Article:
 
     def __init__(self, name):
 
-        self.working_path = os.path.join(Config().working_path, 'Blog')
+        self.working_path = 'Blog'
         self.md_name = name
         self.md_file = os.path.join(self.working_path, 'md', self.md_name)
         self.md_content = codecs.open(self.md_file, mode='r', encoding='utf-8').read()

@@ -13,7 +13,7 @@ class Index:
 
     def __init__(self):
 
-        self.working_path = os.path.join(Config().working_path, 'Blog')
+        self.working_path = 'Blog'
 
     def to_html(self):
 
