@@ -17,21 +17,21 @@ def index():
 
 @app.route('/blog')
 def blog_index():
-    return send_from_directory('/home/linaro/BlogSystem/Blog/html', 'index.html')
+    return send_from_directory('Blog/html', 'index.html')
 
 @app.route('/blog/<filename>')
 def blog_article(filename):
-    return send_from_directory('/home/linaro/BlogSystem/Blog/html', filename)
+    return send_from_directory('Blog/html', filename)
 
 @app.route('/pic/<filename>')
 def pic(filename):
-    return send_from_directory('/home/linaro/BlogSystem/Blog/pic', filename)
+    return send_from_directory('Blog/pic', filename)
 
 @app.route('/css/<filename>')
 def css(filename):
-    return send_from_directory('/home/linaro/BlogSystem/Blog/css', filename)
+    return send_from_directory('Blog/css', filename)
 
 
 if __name__ == '__main__':
     app.debug = True
-    app.run(host='192.168.0.93', port=80, threaded=True)
+    app.run(host='192.168.0.101', port=80, threaded=True)

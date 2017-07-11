@@ -34,7 +34,7 @@ class Index:
 	index_output.write('<ul>\n')
   	index_output.write('<li><a href=' + Config().public_url + '>' + Config().blog_name  + '</a></li>\n')
 	index_output.write('<ul style="float:right;list-style-tpye:none;">\n')
-    	#index_output.write('<li><a href="library">Library</a></li>\n')
+    	index_output.write('<li><a href="http://trans.xjq314.com:9091">Transmission</a></li>\n')
 	index_output.write('<li><a href="https://github.com/xjq">Projects</a></li>\n')
     	index_output.write('<li><a href="blog/2015_12_25_blog_architecture.html">About</a></li>\n')
  	index_output.write('</ul>\n')
